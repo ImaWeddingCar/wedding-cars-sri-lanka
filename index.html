@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMA WEDDING CARS - Luxury Wedding Car Rental</title>
+    <link rel="stylesheet" href="styles 2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="logoo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="logoo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="logoo.png">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="logoo.png">
+  
+  <link rel="shortcut icon" type="image/x-icon" href="logoo.png">
+   <meta name="google-site-verification" content="0QMn6zwQ4yLHPyxHzlfPXfHu0WyXrtuysAno4t3z2BE" />
+    <style>
+    
+      
+    </style>
+</head>
+<body>
+    
+    <header id="main-header">
+        <div class="container">
+            <h1 class="logo">IMA WEDDING CAR</h1>
+            <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="navbar-main">
+            &#9776; </button>
+            <nav id="navbar-main" class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#packages">Packages</a></li>
+                 <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="CONTACTus.html">CONTACT US</a></li>
+                    <li><a href="index.html#quote" class="cta-btn">BOOK NOW</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content animate-on-scroll">
+            <h2>Arrive in Timeless Style</h2>
+            <p>Exceptional luxury transportation for your perfect wedding day.</p>
+            <a href="#quote" class="button primary-btn">Book Your Dream Car</a>
+        </div>
+</section>
+ 
+<section id="why-us" class="section-padding">
+    <div class="container animate-on-scroll">
+        <h3 class="animate-text">Why Choose <strong>IMA</strong> Wedding Car?</h3>
+        <p class="section-subtitle">Experience the peace of mind that comes with luxury, reliability, and precision service on your special day.</p>
+        
+        <div class="feature-grid">
+            
+            <div class="feature-item animate-on-scroll">
+                <i class="icon-clock">🕒</i>
+                <h4>Guaranteed Punctuality</h4>
+                <p>Our professional chauffeurs ensure prompt arrival and impeccable timing for every stage of your event. Stress-free transport is our promise.</p>
+            </div>
+
+            <div class="feature-item animate-on-scroll">
+                <i class="icon-car">💎</i>
+                <h4>Immaculate Fleet</h4>
+                <p>Every vehicle in our collection is meticulously maintained, detailed, and prepared for your wedding day, ensuring a pristine experience.</p>
+            </div>
+            
+            <div class="feature-item animate-on-scroll">
+                <i class="icon-heart">🤍</i>
+                <h4>Personalized Service</h4>
+                <p>From champagne service to custom route planning, we tailor every detail to your needs, making your journey as memorable as the destination.</p>
+            </div>
+            
+        </div>
+        
+       
+    </div>
+</section>
+
+  <section id="packages" class="section-padding">
+    <div class="container secondary-showcase-flex animate-on-scroll">
+        
+        <div class="showcase-image-area">
+            <img src="Gemini_Generated_Image_35sw5w35sw5w35sw.png" alt="Toyota Taisor Modern Wedding Car" class="showcase-car-img">
+        </div>
+
+        <div class="showcase-details-area">
+            <h4 class="showcase-category">MODERN LUXURY</h4>
+            <h2 class="showcase-car-name">Toyota Taisor 2025</h2>
+            <p class="showcase-description">Arrive in the ultimate statement of contemporary elegance. Featuring premium leather interiors and advanced climate control for a relaxing journey.</p>
+            
+            <div class="showcase-pricing">
+                <span class="price-label">Starting From:</span>
+                <span class="price-value">LKR 10,000</span>
+            </div>
+
+            <p class="price-condition">* 2 Hours and 20 KM Included in Base Rate</p>
+
+            <a href="#quote" class="button primary-btn showcase-cta">BOOK YOUR CAR NOW</a>
+        </div>
+        
+    </div>
+</section>
+
+
+
+  <section id="quote" class="section-padding animate-on-scroll ">
+    <div class="container">
+        <h2>Book Your Wedding Car Now</h2>
+
+                
+        <form class="quote-request-form" action="https://formsubmit.co/imaweddingcar@gmail.com" method="POST" id="bookingForm">
+            
+            <input type="hidden" name="_subject" value="NEW WEDDING CAR BOOKING REQUEST">
+
+            <div class="form-grid">
+                
+                <select name="wedding-car" required>
+                    <option value="">-- Select Wedding Car --</option>
+                    <option value="Toyota taisor">Toyota Taisor</option>
+                    <option value="Toyota Axio 2018"></option>
+                    <option value="Mercedes S-Class"></option>
+                </select>
+                <input type="date" name="wedding-date" placeholder="Select Wedding Date" required>
+
+               <select name="start-time" id="startTimeSelect" required>
+    <option value="">-- Start Time --</option>
+                </select>
+                <select name="end-time" id="endTimeSelect" required>
+    <option value="">-- End Time --</option>
+    </select>
+
+                <input type="text" name="start-location" placeholder="Start Location" required>
+                <input type="text" name="end-location" placeholder="End Location" required>
+            </div>
+            
+            <textarea name="route-explanation" placeholder="Briefly explain the route:" rows="3"></textarea>
+
+            <div class="decoration-toggle">
+                <p>Decoration:</p>
+                <input type="hidden" name="decoration-type" id="decorationType" value="Artificial">
+                <button type="button" class="deco-btn active" data-value="Artificial">Artificial</button>
+                <button type="button" class="deco-btn" data-value="Natural">Natural</button>
+            </div>
+
+            <div class="form-grid">
+                <input type="text" name="first-name" placeholder="First Name" required>
+                <input type="text" name="last-name" placeholder="Last Name" required>
+                <input type="email" name="email" placeholder="Enter your Email" required>
+                <input type="tel" name="phone" placeholder="Your Contact Number">
+            </div>
+
+            <button type="submit" class="submit-btn">Book Now</button>
+        </form>
+    </div>
+</section>  
+   
+
+    <footer>
+    <div class="container footer-grid animate-on-scroll">
+        
+        <div class="footer-col footer-mission">
+            <img src="logoo.png" alt="IMA Wedding Car Logo" class="footer-logo">
+            
+            <p class="mission-text">
+                Choosing us as your Wedding Car Partner means peace of mind, elegance, and unforgettable memories. We're here to make your wedding transportation as special as the day itself.
+            </p>
+        </div>
+        
+        <div class="footer-col footer-details">
+            
+            <p class="trust-text">
+                We pride ourselves on being a Trusted and Reliable provider of luxury wedding car services.
+            </p>
+            
+            <div class="contact-info">
+                
+                
+                <h4 class="phone-label">Phone:</h4>
+                <p>+94 76 22 35 814</p>
+                
+                <h4 class="email-label">Email:</h4>
+                <p>imaweddingcar@gmail.com</p>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <div class="container footer-bottom-flex">
+            
+            <div class="footer-links">
+                <a href="index.html">Home</a> / 
+                <a href="aboutus.html">About</a> / 
+                <a href="CONTACTus.html">Contact</a>
+            </div>
+
+            <div class="copyright-text">
+                Copyrights &copy; 2025 All Rights Reserved by IMA Wedding Car.
+            </div>
+            
+            <div class="footer-social">
+                <a href="https://www.facebook.com/share/17ZM7doMu8/?mibextid=wwXIfr" target="_blank" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/ima_wedding_car?igsh=MWo5cXJ4bGU5NGMwdw%3D%3D&utm_source=qr" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@ima_wedding_cars?_r=1&_t=ZS-91f5bSn3Vot" target="_blank" class="social-icon tiktok"><i class="fab fa-tiktok"></i></a>
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+    <script src="new java.js"></script>
+        // See Section 3 below
+    
+</body>
+</html>

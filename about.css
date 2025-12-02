@@ -1,0 +1,475 @@
+/*==================================
+  1. Base & Global Styles
+  ==================================*/
+:root {
+    --color-primary: #ee3bb8; /* Emerald Green/Teal Accent */
+    --color-secondary: #AAAAAA; /* Light Gray Accent */
+    --color-background: #FFFFFF; /* Pure White Background */
+    --color-text: #222222; /* Deep Charcoal/Near Black Text */
+    --color-light: #FFFFFF;
+    --color-dark: #111111;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Roboto', sans-serif;
+    --padding-section: 80px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--color-text);
+    background-color: var(--color-background);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    color: var(--color-dark);
+    margin-bottom: 0.5em;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h3.section-title {
+    font-size: 2.2rem;
+    margin-bottom: 1em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+.section-padding {
+    padding: var(--padding-section) 0;
+}
+
+.cta-btn {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    padding: 60px 80px;
+    border-radius: 5px;
+    font-weight: 100;
+    padding: 8px 15px !important; /* Smaller padding for a cleaner button */
+    border-radius: 4px;
+    font-weight: bold;
+    margin-left: 15px; /* Space between the last link and the button */
+    transition: background-color 0.3s;
+
+}
+.cta-btn:hover {
+    background-color: #fafafa;
+}
+/* Button Styling */
+ .new-cta-btn {
+    display: inline-block;
+    padding: 14px 40px;
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 1px solid var(--color-primary);
+    cursor: pointer;
+    text-align: center;
+}
+
+.button:hover, .new-cta-btn:hover {
+    background-color: var(--color-dark);
+    border-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+.gallery-btn {
+    display: block;
+    max-width: 300px;
+    margin: 30px auto;
+}
+
+/*==================================
+  2. Header & Navigation (Reused from Index)
+  ==================================*/
+#main-header {
+    background-color: var(--color-light);
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: var(--color-dark);
+    letter-spacing: 3px;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: 400;
+    padding: 5px 0;
+    transition: color 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-links a:hover {
+    color: var(--color-primary);
+}
+
+.cta-btn {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-weight: 500;
+    border: 1px solid var(--color-primary);
+}
+
+.menu-toggle {
+    display: none; 
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--color-dark);
+    cursor: pointer;
+}
+
+/* Inside the @media (max-width: 768px) block: */
+.menu-toggle {
+    display: block; /* This makes the button appear on mobile */
+}
+
+/*==================================
+  3. About Hero Banner
+  ==================================*/
+#about-hero {
+    background: url('beautiful-bride.jpg') no-repeat center center/cover; /* Placeholder for About BG */
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    color: var(--color-light);
+    position: relative;
+}
+
+#about-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+}
+
+#about-hero .hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#about-hero h1 {
+    font-size: 4.5rem;
+    color: var(--color-light);
+}
+
+#about-hero p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+
+/*==================================
+  4. Our Story Section
+  ==================================*/
+#our-story {
+    background-color: var(--color-background);
+}
+
+.story-flex {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.story-text {
+    flex: 2;
+}
+
+.story-image {
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+    padding-top: 20px;
+}
+
+.story-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    box-shadow: 10px 10px 0px var(--color-primary); /* Shadow effect for visual interest */
+}
+
+/*==================================
+  5. Mission/Commitment Section
+  ==================================*/
+#mission {
+    background-color: #F2F2F2; /* Light gray background */
+    color: var(--color-text);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.mission-item {
+    background-color: var(--color-light);
+    padding: 30px;
+    border-left: 3px solid var(--color-primary);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.mission-item h4 {
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--color-dark);
+    margin-bottom: 10px;
+}
+
+
+/*==================================
+  6. Footer (Reused from Index)
+  ==================================*/
+/*==================================
+  7. Footer
+  ==================================*/
+footer {
+    background-color: var(--color-dark);
+    color: #ccc;
+    padding-top: 60px;
+    font-size: 0.9rem;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #333;
+    gap: 40px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 300px;
+}
+
+.footer-mission {
+    max-width: 45%;
+}
+
+.footer-logo {
+    width: 150px; 
+    height: auto;
+    margin-bottom: 15px;
+     /* Makes the logo white */
+}
+
+.mission-text, .trust-text {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contact-info h4 {
+    font-size: 1rem;
+    color: var(--color-primary);
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.contact-info p {
+    margin: 0;
+    color: #ddd;
+}
+
+.footer-bottom {
+    padding: 20px 0;
+}
+
+.footer-bottom-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+    text-transform: uppercase;
+}
+
+.footer-links a:hover {
+    color: var(--color-primary);
+}
+
+.footer-social a {
+    color: #ccc;
+    font-size: 1.3rem;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: var(--color-primary);
+}
+/*==================================
+  7. Media Queries (Responsiveness)
+  ==================================*/
+@media (max-width: 900px) {
+    /* Story Section */
+    .story-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .story-text {
+        order: 1;
+    }
+
+    .story-image {
+        order: -1;
+        min-width: unset;
+        margin-bottom: 20px;
+        padding-top: 0;
+    }
+
+    .story-image img {
+        box-shadow: 5px 5px 0px var(--color-primary);
+    }
+    
+    .footer-grid {
+        flex-direction: column;
+    }
+
+    .footer-mission {
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .section-padding {
+        padding: 50px 0;
+    }
+
+    #about-hero h1 {
+        font-size: 3rem;
+    }
+    
+    .menu-toggle {
+        display: block; 
+    }
+
+    .nav-links {
+        display: none; 
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        background-color: var(--color-light);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #eee;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 15px;
+    }
+    
+    .cta-btn {
+        margin: 10px 0;
+    }
+}
+
+/* --- Animation Definitions --- */
+
+/* 1. Initial State (Hidden/Off-Screen) */
+.animate-on-scroll {
+    opacity: 1;
+    transform: translateY(50px); /* Starts 50px below its final position */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* 2. Final State (Visible/On-Screen) */
+.animate-on-scroll.in-view {
+    opacity: 1;
+    transform: translateY(0); /* Slides into final position */
+}
